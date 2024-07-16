@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryColour"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/wel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/wel"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:transitionName="logo_text2"
+        app:layout_constraintBottom_toTopOf="@+id/appn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <TextView
+        android:id="@+id/appn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:transitionName="logo_text2"
+        app:layout_constraintBottom_toTopOf="@+id/flowerlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wel"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <ImageView
+        android:id="@+id/flowerlogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/flower_logo"
+        android:transitionName="logo_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/sl1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/brawler"
+        android:text="@string/appslogan1"
+        android:textAlignment="center"
+        android:textColor="@color/accentColour3"
+        android:textSize="25dp"
+        android:transitionName="logo_text1"
+        app:layout_constraintBottom_toTopOf="@+id/sl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowerlogo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sl2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/brawler"
+        android:text="@string/appslogan2"
+        android:textAlignment="center"
+        android:textColor="@color/accentColour3"
+        android:textSize="25dp"
+        android:transitionName="logo_text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sl1" />
+
+    <TextView
+        android:id="@+id/sl3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/brawler"
+        android:text="@string/appslogan3"
+        android:textAlignment="center"
+        android:textColor="@color/accentColour3"
+        android:textSize="25dp"
+        android:transitionName="logo_text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sl2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

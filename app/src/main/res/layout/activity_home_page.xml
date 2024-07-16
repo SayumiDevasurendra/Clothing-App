@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColour">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/bungee"
+                android:text="@string/app_name"
+                android:textColor="@color/primaryColour"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/flower_logo" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@color/accentColour"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:background="@color/accentColour"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="@color/primaryColour"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/category"
+            android:layout_width="10dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:background="@color/accentColour"
+            android:gravity="center"
+            android:text="@string/category"
+            android:textColor="@color/primaryColour"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:background="@color/accentColour"
+            android:gravity="center"
+            android:text="@string/profile"
+            android:textColor="@color/primaryColour"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigationBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/newly_released"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/navigationBar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amaranth"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="10dp"
+                    android:text="Newly Released"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brawler"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/newlyReleased"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/detaileddress"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/dress2" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/dress9" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/top7" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/top9" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/marketing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newly_released"
+                android:background="@color/secondaryColour"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brawler"
+                    android:paddingTop="10dp"
+                    android:text="@string/trending_slogan"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bungee"
+                    android:text="@string/main_slogan"
+                    android:textAlignment="center"
+                    android:textColor="@color/accentColour"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brawler"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/marketing_slogan"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/everyones_favourite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marketing"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amaranth"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Everyone's Favourite"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brawler"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/everonesFavourite"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/dress5" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/skirt1" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/top12" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/twoset1" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/offers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/everyones_favourite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amaranth"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Amazing Offers"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brawler"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/offers_slogan"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/dress3" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pant2" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/skirt8" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/top10" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

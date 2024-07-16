@@ -1,0 +1,66 @@
+<resources>
+    //splash screen
+    <string name="app_name">FLOWER CLOTHING</string>
+    <string name="appslogan1">Blossom in Style</string>
+    <string name="appslogan2">with Flower Clothing :</string>
+    <string name="appslogan3">Your Petals to Fashion!</string>
+    <string name="wel">Welcome To</string>
+
+    //login screen
+    <string name="login">Login</string>
+    <string name="topic">Hello There, Welcome Back</string>
+    <string name="topic2">Sign In to continue</string>
+    <string name="uname">Username</string>
+    <string name="pw">Password</string>
+    <string name="forgetpw">Forget Password?</string>
+    <string name="btn_sign_in">GO</string>
+    <string name="sign_upline">NEW USER? SIGN UP</string>
+
+    //sign up screen
+    <string name="welcomeSU">Welcome</string>
+    <string name="SloganSU">SignUp to start your new clothing Journey</string>
+    <string name="fullNameSU">Full Name</string>
+    <string name="emailSU">E-mail</string>
+    <string name="addSU">Address</string>
+    <string name="pnoSU">Phone Number</string>
+    <string name="btn_signup">GO</string>
+
+    //home screen
+    <string name="home">Home</string>
+    <string name="category">Category</string>
+    <string name="goal">Goal</string>
+    <string name="profile">Profile</string>
+    <string name="newlyReleased">Look what just got out! Grab your favourite styles and colors now.</string>
+    <string name="everonesFavourite">These are quite the choice among many, you can own one yourself and be a trend-setter.</string>
+    <string name="trending_slogan">Sri Lanka\'s most trending women\'s clothing app</string>
+    <string name="main_slogan">We are FLOWER CLOTHING</string>
+    <string name="marketing_slogan">Our Tastefully designed products are made with finest finishes which enhances your look.
+        So vibrant and eye-catching, you certainly do not want to miss.</string>
+    <string name="offers_slogan">Shop MORE and save BIG with our exciting deals. You wouldn\'t want to miss out on these!</string>
+
+    //user profile
+    <string name="cartslogan">Get Your Shopping Cart here</string>
+    <string name="fullnAns">Sayumi Devasurendra</string>
+    <string name="emailAns">sayumi@gmail.com</string>
+    <string name="dobAns">05 - 08 - 2002</string>
+    <string name="addAns">No: 52, Main Road, Panadura</string>
+    <string name="pnoAns">0773469638</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+
+    //more-details
+    <string name="price">LKR 6,850.00</string>
+    <string name="stock">In stock</string>
+    <string name="please_note">The Image may be slightly different from the actual product
+        in terms of color due to LIGHTING CONDITIONS or the display used to view. We hope you can seem to understand,
+        it\'s beyond out ability to get the EXACT product color on the image</string>
+
+    //more-cat-details
+    <string name="cat_price">LKR 3,550.00</string>
+
+    //Cart
+    <string name="size1">Size : UK8</string>
+    <string name="colorBl">Color : Black</string>
+    <string name="colorWh">Color : White</string>
+
+</resources>

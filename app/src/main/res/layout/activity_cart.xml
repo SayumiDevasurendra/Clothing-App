@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColour">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/bungee"
+                android:text="@string/app_name"
+                android:textColor="@color/primaryColour"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/flower_logo" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@color/accentColour"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:background="@color/accentColour"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="@color/primaryColour"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/category"
+            android:layout_width="10dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:background="@color/accentColour"
+            android:gravity="center"
+            android:text="@string/category"
+            android:textColor="@color/primaryColour"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:background="@color/accentColour"
+            android:gravity="center"
+            android:text="@string/profile"
+            android:textColor="@color/primaryColour"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigationBar">
+
+        <LinearLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navigationBar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dress2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/secondaryColour"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/brawler"
+                        android:padding="10dp"
+                        android:text="Black Bowed Maxi Dress"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/brawler"
+                        android:paddingLeft="10dp"
+                        android:text="@string/colorBl"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/brawler"
+                        android:paddingLeft="10dp"
+                        android:text="@string/size1"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/brawler"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/price"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/top7" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/secondaryColour"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:padding="10dp"
+                            android:text="V Necked Crop Top"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="Color : Pink-Printed"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/size1"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/brawler"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="LKR 3200.00"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/dress5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/secondaryColour"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:padding="10dp"
+                            android:text="Layered Maxi Dress"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/colorWh"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/size1"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/brawler"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="LKR 6550.00"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pant6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/secondaryColour"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:padding="10dp"
+                            android:text="Wide Legged Pant"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/colorBl"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/size1"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/brawler"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="LKR 5500.00"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/top9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/secondaryColour"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:padding="10dp"
+                            android:text="Line Necked Strapped Top"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/colorWh"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/size1"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/brawler"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="LKR 4580.00"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/twoset9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/secondaryColour"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:padding="10dp"
+                            android:text="Summer Time Two-Set"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="Color : Blue with White"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/size1"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/brawler"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/price"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/skirt8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/secondaryColour"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:padding="10dp"
+                            android:text="Black Swan Split Skirt"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/colorBl"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/brawler"
+                            android:paddingLeft="10dp"
+                            android:text="@string/size1"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/brawler"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="LKR 4970.00"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/brawler"
+                    android:paddingRight="10dp"
+                    android:text="Total = LKR 38,500.00"
+                    android:textSize="14dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <Button
+                        android:id="@+id/btn_checkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/accentColour2"
+                        android:fontFamily="@font/bungee"
+                        android:text="Checkout" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/accentColour2"
+                        android:fontFamily="@font/bungee"
+                        android:text="@string/btn_update" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/accentColour2"
+                        android:fontFamily="@font/bungee"
+                        android:text="@string/btn_delete" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
